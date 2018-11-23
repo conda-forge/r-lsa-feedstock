@@ -46,7 +46,7 @@ about:
     statistically  via a truncated singular value decomposition (a two-mode factor analysis)  over
     a given document-term matrix, this variability problem can be overcome.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}\/lib\/R\/share\/licenses\/GPL-3'  # [unix]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 extra:
    recipe-maintainers:
     - MathiasHaudgaard
