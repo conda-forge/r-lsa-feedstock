@@ -1,4 +1,4 @@
-{% set version = '0.73.1' %}
+{% set version = "0.73.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -13,11 +13,11 @@ source:
     - https://cran.r-project.org/src/contrib/lsa_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/lsa/lsa_{{ version }}.tar.gz
 
-  sha256: e585da8992fa6d8f86067bdaf7b1456b9b5eb4695327faec8521e609c5d0c8a9
+  sha256: cb0017bbda9b0eb1d05b451e0f557d02f789f65b2f8bf005606b63a3708e63a8
 
 build:
   noarch: generic
-  number: 1001
+  number: 0
 
   rpaths:
     - lib/R/lib/
@@ -40,15 +40,12 @@ test:
 about:
   home: https://CRAN.R-project.org/package=lsa
   license: GPL (>= 2)
-  summary: The basic idea of latent semantic analysis (LSA) is,  that text do have a higher order
-    (=latent semantic) structure which,  however, is obscured by word usage (e.g. through
-    the use of synonyms  or polysemy). By using conceptual indices that are derived
-    statistically  via a truncated singular value decomposition (a two-mode factor analysis)  over
-    a given document-term matrix, this variability problem can be overcome.
+  summary: The basic idea of latent semantic analysis (LSA) is,  that text do have a higher order (=latent semantic) structure which,  however, is obscured by word usage (e.g. through the use of synonyms  or polysemy). By using conceptual indices that are derived statistically  via a truncated singular value decomposition
+    (a two-mode factor analysis)  over a given document-term matrix, this variability problem can be overcome.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 extra:
-   recipe-maintainers:
+  recipe-maintainers:
     - conda-forge/r
     - MathiasHaudgaard
     - FrodePedersen
