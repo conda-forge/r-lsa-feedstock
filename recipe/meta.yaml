@@ -1,4 +1,4 @@
-{% set version = "0.73.2" %}
+{% set version = "0.73.3" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -13,11 +13,11 @@ source:
     - https://cran.r-project.org/src/contrib/lsa_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/lsa/lsa_{{ version }}.tar.gz
 
-  sha256: cb0017bbda9b0eb1d05b451e0f557d02f789f65b2f8bf005606b63a3708e63a8
+  sha256: f07f1159f215501495d7a077911e7ed2ac61e1705899f3be3a5cf9012778619a
 
 build:
   noarch: generic
-  number: 1
+  number: 0
 
   rpaths:
     - lib/R/lib/
