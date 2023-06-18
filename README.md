@@ -1,11 +1,11 @@
-About r-lsa
-===========
+About r-lsa-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lsa-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=lsa
 
 Package license: GPL (>= 2)
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lsa-feedstock/blob/main/LICENSE.txt)
 
 Summary: The basic idea of latent semantic analysis (LSA) is,  that text do have a higher order (=latent semantic) structure which,  however, is obscured by word usage (e.g. through the use of synonyms  or polysemy). By using conceptual indices that are derived statistically  via a truncated singular value decomposition (a two-mode factor analysis)  over a given document-term matrix, this variability problem can be overcome.
 
