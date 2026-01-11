@@ -1,4 +1,4 @@
-{% set version = "0.73.3" %}
+{% set version = "0.73.4" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -12,11 +12,11 @@ source:
     - https://cran.r-project.org/src/contrib/lsa_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/lsa/lsa_{{ version }}.tar.gz
 
-  sha256: f07f1159f215501495d7a077911e7ed2ac61e1705899f3be3a5cf9012778619a
+  sha256: 8be3f4d0b4419ef903e988fd1794c660d450ad79cf6ede2f728be66824303d04
 
 build:
   noarch: generic
-  number: 4
+  number: 0
 
   rpaths:
     - lib/R/lib/
